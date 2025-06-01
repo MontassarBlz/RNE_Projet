@@ -1,0 +1,7 @@
+pdfplumber
+arabic-reshaper
+python-bidi
+langdetect
+mistralai
+flask
+flask-cors

@@ -1,0 +1,124 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 210 60% 45%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 195 100% 56%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 60% 45%;
+
+    --radius: 0.5rem;
+
+    /* Couleurs officielles RNE basées sur le logo */
+    --rne-navy: 210 60% 35%;           /* #2E5A87 */
+    --rne-navy-dark: 210 65% 23%;      /* #1E3A57 */
+    --rne-navy-light: 210 55% 48%;     /* #4A7BA7 */
+    --rne-blue: 210 75% 59%;           /* #4A90E2 */
+    --rne-blue-light: 202 85% 74%;     /* #87CEEB */
+    --rne-cyan: 174 100% 56%;          /* #40E0D0 */
+    --rne-cyan-light: 160 100% 75%;    /* #7FFFD4 */
+    --rne-gray: 210 17% 97%;           /* #F8F9FA */
+    --rne-gray-dark: 210 9% 46%;       /* #6C757D */
+    --rne-gray-light: 210 17% 92%;     /* #E9ECEF */
+    --rne-text: 0 0% 20%;              /* #333333 */
+    --rne-text-light: 0 0% 40%;        /* #666666 */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .rne-gradient {
+    background: linear-gradient(135deg, hsl(var(--rne-navy)) 0%, hsl(var(--rne-navy-dark)) 50%, hsl(var(--rne-blue)) 100%);
+  }
+  
+  .rne-gradient-cyan {
+    background: linear-gradient(135deg, hsl(var(--rne-cyan)) 0%, hsl(var(--rne-blue-light)) 100%);
+  }
+  
+  .rne-gradient-blue {
+    background: linear-gradient(135deg, hsl(var(--rne-blue)) 0%, hsl(var(--rne-navy)) 100%);
+  }
+  
+  .rne-shadow {
+    box-shadow: 0 10px 25px -5px hsla(var(--rne-navy), 0.1), 0 10px 10px -5px hsla(var(--rne-navy), 0.04);
+  }
+
+  .message-animation {
+    animation: slideInFromBottom 0.3s ease-out;
+  }
+
+  @keyframes slideInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .typing-animation {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+}

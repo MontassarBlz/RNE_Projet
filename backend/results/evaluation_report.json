@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "total_cases": 1,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "failed_cases": 0,
+    "average_similarity": 0.3333333333333333
+  },
+  "details": [
+    {
+      "question": "Quelle est la liste des documents pour une succursale étrangère au RNE ?",
+      "expected": "['identification fiscale', 'statuts société', 'décision ouverture', 'représentant légal', 'bénéficiaire effectif']",
+      "actual": "Pour immatriculer une succursale étrangère au Registre National des Entreprises (RNE) en Tunisie, plusieurs documents sont généralement requis. Voici une liste des documents typiquement nécessaires :\n\n1. **Formulaire de demande d'immatriculation** : Ce formulaire doit être dûment rempli et signé par le représentant légal de la succursale.\n\n2. **Statuts de la société mère** : Une copie des statuts de la société mère étrangère, traduits en français ou en arabe et légalisés.\n\n3. **Extrait du registre de commerce de la société mère** : Un extrait récent du registre de commerce de la société mère, traduit en français ou en arabe et légalisé.\n\n4. **Décision de création de la succursale** : Une copie de la décision de création de la succursale, prise par l'organe compétent de la société mère, traduite en français ou en arabe et légalisée.\n\n5. **Procès-verbal de nomination du représentant légal** : Une copie du procès-verbal de nomination du représentant légal de la succursale, traduit en français ou en arabe et légalisé.\n\n6. **Pièce d'identité du représentant légal** : Une copie de la pièce d'identité du représentant légal de la succursale.\n\n7. **Preuve de domiciliation** : Un document prouvant l'adresse de la succursale en Tunisie (par exemple, un bail commercial ou une attestation de domiciliation).\n\n8. **Attestation de dépôt de capital** : Une attestation de dépôt de capital social si la succursale a un capital social distinct.\n\n9. **Autorisation d'exercer** : Si l'activité de la succursale est réglementée, une copie de l'autorisation d'exercer cette activité en Tunisie.\n\n10. **Déclaration sur l'honneur** : Une déclaration sur l'honneur du représentant légal attestant que la succursale respectera les lois et règlements en vigueur en Tunisie.\n\nCes documents doivent être fournis au Centre de Formalités des Entreprises (CFE) compétent pour l'immatriculation au RNE. Il est important de vérifier les exigences sp",
+      "similarity": 0.33,
+      "is_correct": false,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "question": "Quelle est la liste des documents pour une succursale étrangère au RNE ?",
+        "expected_keywords": [
+            "identification fiscale",
+            "statuts société",
+            "décision ouverture",
+            "représentant légal",
+            "bénéficiaire effectif"
+        ],
+        "required_keywords": 3,
+        "context_file": "pdfs/RNE C 007_Fr.pdf"
+    }
+]
